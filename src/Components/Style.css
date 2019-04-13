@@ -1,0 +1,16 @@
+.Container {
+  height: 90vh;
+  width: 275px;
+  border: solid black 1px;
+
+  margin-top: 25px;
+}
+
+.Card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+}
