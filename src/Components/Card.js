@@ -1,11 +1,20 @@
 import React from 'react'
 
 const Card = (props) => {
+
+    let moveLeft = () => {
+        return props.moveCard(props.cardID, 'left')
+    }
+
+    let moveRight = () => {
+        return props.moveCard(props.cardID, 'right')
+    }
+
     return (
         <div className='Card'>
-            <button>L</button>
-            <p>Sample text</p>
-            <button>R</button>
+            <button onClick={moveLeft}>L</button>
+            <p>{props.text}</p>
+            <button onClick={moveRight}>R</button>
         </div>
     )
 }

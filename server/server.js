@@ -12,19 +12,11 @@ app.use(bodyParser.json())
 
 /* EndPoints Go Here */
 
-app.get(`/api/cards`, cr.getCards)
-
-// app.post(`/api/message`, cr.addMessage)
-
-// app.put(`/api/message`)
-
-// app.delete(`/api/message`)
+app.post(`/api/cards`, cr.getCards);
+app.post(`/api/moveCard`, cr.moveCard);
+app.post(`/api/addCard`, cr.addCard);
 
 
-
-
-// *** This is what makes the server run *** //
-
-app.listen(4444,()=>{
-    console.log('4444: ...running admirably...');
+app.listen(4545,()=>{
+    console.log('4545: ...running admirably...');
 })
