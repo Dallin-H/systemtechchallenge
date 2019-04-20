@@ -60,7 +60,7 @@ export default class Completed extends Component {
       <div className="Container">
         <h4>Completed</h4>
         <input
-          placeholder="add item to backlog"
+          placeholder="add item to Completed"
           onChange={e => this.handleInput(e.target.value)}
         />
         <button onClick={this.addCard}>Add Item</button>

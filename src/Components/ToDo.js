@@ -58,9 +58,9 @@ export default class ToDo extends Component {
     });
     return (
       <div className="Container">
-        <h4>ToDo</h4>
+        <h4>To Do</h4>
         <input
-          placeholder="add item to backlog"
+          placeholder="add item to To Do"
           onChange={e => this.handleInput(e.target.value)}
         />
         <button onClick={this.addCard}>Add Item</button>

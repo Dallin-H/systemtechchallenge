@@ -1,8 +1,17 @@
+.App {
+	height: 100vh;
+	background: #ff0000;
+	background: linear-gradient(40deg,#ff0000 0%, #ffae00 50%, #ffff00 80%);
+	background: -webkit-linear-gradient(40deg,#ff0000 0%, #ffae00 50%, #ffff00 80%);
+	background: -moz-linear-gradient(40deg,#ff0000 0%, #ffae00 50%, #ffff00 80%);
+}
+
 .Container {
   height: 90vh;
   width: 275px;
   border: solid black 1px;
-
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.333);
   margin-top: 25px;
 }
 
@@ -20,4 +29,29 @@
 
 .Card p {	
 	word-wrap: break-word;
+}
+
+button {
+	background: transparent;
+	border: none;
+	margin: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 68, 0, 0.401);
+  border-radius: 5px;
+  
+}
+
+input {
+	background: transparent;
+	border: none;
+	border-bottom: black 1px solid;
+	color: black;
+}
+
+::placeholder {
+	color: black;
+	font-size: .8em;
 }

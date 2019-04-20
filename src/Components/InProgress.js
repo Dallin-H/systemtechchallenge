@@ -63,7 +63,7 @@ export default class InProgress extends Component {
       <div className="Container">
         <h4>In Progress</h4>
         <input
-          placeholder="add item to backlog"
+          placeholder="add item to In Progress"
           onChange={e => this.handleInput(e.target.value)}
         />
         <button onClick={this.addCard}>Add Item</button>

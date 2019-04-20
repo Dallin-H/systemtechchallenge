@@ -63,7 +63,7 @@ export default class Backlog extends Component {
       <div className="Container">
         <h4>Backlog</h4>
         <input
-          placeholder="add item to backlog"
+          placeholder="add item to Backlog"
           onChange={e => this.handleInput(e.target.value)}
         />
         <button onClick={this.addCard}>Add Item</button>

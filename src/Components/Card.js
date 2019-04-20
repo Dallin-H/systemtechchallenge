@@ -12,9 +12,9 @@ const Card = (props) => {
 
     return (
         <div className='Card'>
-            <button onClick={moveLeft}>L</button>
+            <button onClick={moveLeft}>{`<`}</button>
             <p>{props.text}</p>
-            <button onClick={moveRight}>R</button>
+            <button onClick={moveRight}>{`>`}</button>
         </div>
     )
 }
